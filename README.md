@@ -1,1 +1,1 @@
-https://github.com/Tsering-Lama/Tsering-Lama.github.io
+Tsering-Lama.github.io
