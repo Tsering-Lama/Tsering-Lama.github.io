@@ -1,0 +1,40 @@
+
+body {color: orange; background-color: lightblue;}
+/* .t1, .t2 {color:red; background-color: aqua; }
+.t2{
+
+}
+
+p{
+    font-size:100px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    color: blueviolet;
+    background-color: aquamarine;
+}
+
+.p1{
+    border: 2px solid orangered;
+    text-align: center;
+
+}
+
+div{
+    border: 2 solid dashed greenyellow;
+    margin: auto;
+    ## margin auto alighs the div on the center 
+    padding: 23px;
+    float: left;
+    translate: 
+} */
+
+P{background-color: aqua;}
+.p2{border: 20px;}
+.p3{border: 20; font-weight: bold;}
+.p4{border: 20; font-weight: bold; color: red}
+.p5{border: 20; font-weight: bold; color: red; padding: 20;}
+.p6{border: 20; font-weight: bold; color: red; padding: 20;font-style:italic}
+.p7{border: 20; font-weight: bold; color: red; padding: 20;font-style:italic; border-style: dashed;}
+.p8{border: 20; font-weight: bold; color: red; padding: 20;font-style:italic; border-color: rgb(230, 21, 21);}
+
