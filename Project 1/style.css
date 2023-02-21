@@ -1,0 +1,66 @@
+body{
+    background-color: "lightblue";
+}
+
+.topbar{
+width: 100%;
+height: 100px;
+}
+.logo{
+    float:left;
+    width: 10%;
+    height: 100px;
+}
+.logo2{
+    float:right;
+    width: 10%;
+    height:100px;
+}
+.mainbox{
+    background-color: pink;
+    width: 100%;
+    border: 8px solid rgb(14, 12, 11);
+    height: 1000px;
+}
+
+img > iceland1{
+    border: 8px solid purple;
+    float: left;
+    width: 25%;
+    height: 400px;
+    box-sizing: content-box;
+    font-size: 2vw;
+    padding: 2%;
+    margin: 3%;
+}
+img > iceland2{
+    float: right;
+    border: 2px solid purple;
+    width: 25%;
+    height: 400px;
+}
+
+img{
+    width: 30%;
+    height: 400px;
+}
+h1{
+    background-color: pink;
+    opacity: 0;
+}
+footer{
+    text-decoration: none;
+    background-color: aliceblue;
+    color: white;
+    border-radius: 50px;
+    padding: 3%;
+    margin-bottom: 50px;
+    background-image: linear-gradient( to top right, red) ;
+}
+
+footer > a:hover{
+    color: blueviolet;
+    background-color: lightgoldenrodyellow;
+}
+
+
