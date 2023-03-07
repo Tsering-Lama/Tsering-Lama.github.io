@@ -1,0 +1,39 @@
+body{
+    background-color: lightblue;
+    margin: 33%;
+    margin-top: 2%;
+}
+.scoreCard{
+    float: left;
+    background-color: lightpink;
+    padding: 5px;
+}
+.resetbtn{
+    float: right;
+    background-color: lightpink;
+    padding: 5px;
+
+}
+.box1{
+    background-color: beige;
+    padding: 10px;
+}
+.center{
+    background-color: burlywood;
+    
+}
+button{
+    background-color: green;
+}
+img{
+    margin:0 0 0 33%;
+}
+.history{
+background-color: lightblue;
+}
+/* h1{
+    margin-left: 33%;
+}
+.subtitle{
+    margin-left: 33%;
+} */

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <h1>GUESS MY NUMBER</h1>
+    <p class="subtitle">Guess the number between 1 and 100</p>
+
+    <div class="box1">
+        <div>
+            <div id="scoreCard">
+                Score: <span id="scoreNum">10</span> <br>
+                High Score: <span>0</span>
+            </div>
+            
+        </div>
+
+        <div>
+            <button id="resetbtn">Reset</button>
+        </div>
+        <div class="center">
+            <img src="avatar.jpg" alt=""><br>
+            <p>Guess a number between 1 and 100</p>
+            <p id="outputText">Enter a number below</p>
+            <input id="userInput">
+            <button id="btn">check result</button>
+        </div>
+        <br>
+        <div class="history">
+            <b>Guess History</b> 
+        <ul id="hnum"></ul>
+        </div>
+    </div>
+    <script src="game.js"></script>
+    
+    
+</body>
+</html>
