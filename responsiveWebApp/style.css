@@ -1,0 +1,144 @@
+*{box-sizing: border-box;}
+html{scroll-behavior: smooth;}
+img{
+   display:block;
+   height: 600px;
+}
+#landingPic{width: 95%; 
+   height: 500px; 
+   margin:auto;
+   display:block;}
+
+.imgCardContent{
+   position: absolute;
+   background-color:(rgba(200, 100, 50, 0.5));
+   color:whitesmoke;
+   top: 20%;
+   bottom:20%;
+   left:10%;
+   right:30%;
+   text-align:left;
+   font-size: 1.5em;
+}
+.subtitle{
+   font-weight: inherit;
+   position: absolute;
+   margin-top:-1em;
+}
+.imgCard{
+   box-shadow: 1px 1px 5px rgb(100,100,100);
+   border-radius: 20px;
+   overflow: hidden;
+   position: relative;
+}
+img:hover{
+   box-shadow:none;
+   background-color:aqua;
+}
+
+/*1st CARD*/
+.card{
+   width:22%;
+   box-shadow: 0px 0px 5px 1px gray;
+   border-radius: 5px;
+   overflow:hidden;
+   margin:2% 0%;
+   transition: ease 800ms;
+   position:relative;
+}
+.card:hover{
+   box-shadow: black;
+   transform: scale(1.1);
+}
+.cardContent{
+   padding: 0.5em 0.8em;
+   position:absolute;
+   background-color:(rgba(200, 100, 50, 0.5));
+   top: 20%;
+   bottom:80%;
+   left:10%;
+   right:20%;
+   text-align:center;
+   font-size: 1em;
+   color: coral;
+}
+.cardContent>.par2:hover{
+   background-color: rgba(100,100,100,0.5);
+
+}
+.cardContainer{
+   display:flex;
+   width:97%;
+   margin: 5em auto;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+}
+
+
+/*1st CARD*/
+.card2{
+   width:22%;
+   box-shadow: 0px 0px 5px 1px gray;
+   border-radius: 5px;
+   overflow:hidden;
+   margin:2% 0%;
+   transition: ease 800ms;
+   position:relative;
+   padding:20px 20px;
+}
+.card2:hover{
+   box-shadow: black;
+   transform: scale(1.1);
+}
+.cardContent2{
+   padding: 0.5em 0.8em;
+   position:absolute;
+   background-color:(rgba(200, 100, 50, 0.5));
+   top: 70%;
+   bottom:5%;
+   left:10%;
+   right:30%;
+   text-align:bottom;
+   font-size: 1em;
+   color: coral;
+}
+.cardContainer2{
+   display:flex;
+   width:97%;
+   height: 550px;
+   margin: 5em auto;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+}
+.cardContent2 .par1{
+   font-family: broadway;
+   font-weight: bolder;
+}
+.cardContent2 .par2{
+   font-size: -2em;
+   font-style: normal;
+   color:black
+}
+.card2>img{
+   height: 150px;
+   width: 200px;
+   margin: auto;
+   padding: 20px 20px;
+}
+.cardContent .par1{
+   font-family: broadway;
+   color: whitesmoke;
+   font-size: 3em;
+   font-weight: bolder;
+   background-color: rgb(100,100,100, 0.3);
+}
+.cardContent .par2{
+   font-size: -2em;
+   font-style: normal;
+   color:green;
+}
+
+
+
+
+

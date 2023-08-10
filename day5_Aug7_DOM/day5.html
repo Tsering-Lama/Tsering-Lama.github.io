@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tsering Lama</title>
+    <style>
+        .subtitle{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            color: coral;
+        }
+        .guessNumber{
+            width:45%;
+            padding: 10%;
+            text-align: center;
+            font-size: 5em;
+            color:aqua;
+            background-color: lightgray;
+            margin-top: 1em;
+        }
+        html{scroll-behavior: smooth;}
+        .top{
+            position:fixed;
+            bottom:5%;
+            right:5%;
+            background-color: rgba(20,20,20,0.7);
+            font-size: 2.5em;
+            border-radius: 50%;
+            padding:0.1em;
+            overflow: hidden;
+            transition: ease 300ms;
+            display:none;
+        }
+        .top a{
+            text-decoration: none;
+        }
+        .top:hover{
+            opacity:0.8;
+            box-shadow: 0px 0px 2px 2px black;
+            transform: scale(1.05);
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Tsering Lama</h1>
+    <div id="userName">
+        <p>First name</p>
+        <p>Last name</p>
+        <p class="name1">Full name</p>
+    </div>
+    <h2>parent/sibling/child</h2>
+    <p>Fruit Shopping list</p>
+    <ul>
+        <li>Apple</li>
+        <li>Orange</li>
+        <li>banana</li>
+        <li>Grapes</li>
+        <li>Mango</li>
+    </ul>
+
+    <h2>Events in JS</h2>
+    <button onclick="alert('You Clicked!')">Click Me!</button>
+    <div class="guessNumber">
+        ?
+    </div>
+    <button class="btnGuessNum">Guess a Number</button>
+    <button class="btn1">Press Me!</button>
+
+    <section style="margin-top: 2em;">
+        <button id="btnMouseEvent">Click here</button>
+        <p class="mouseoutEventDisplay">MESSAGE FOR MOUSE OUT </p>
+        <p class="dblclickDisplay">MESSAGE FOR DOUBLE CLICK</p>
+    </section>
+    <div class="top">
+        <a href="#">&#127875;</a>
+    </div>
+    <script src="day5.js"></script>
+    
+</body>
+</html>
