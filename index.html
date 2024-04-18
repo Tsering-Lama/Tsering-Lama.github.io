@@ -1,43 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tsering Lama</title>
+<body>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Online Course Portal</title>
+<link rel="stylesheet" href="style.css">
+<script src="courses.js"></script>
 </head>
 <body>
-    <h1>Software Engineering: Application Decelopment</h1>
-    <h2>Tsering Lama</h2>
 
-<ul>
+<header>
+<nav>
+    <div class="logo">
+        <a href="index.html"><img src="baruch_college_logo.png" alt="Baruch College Logo"></a>
+    </div>
+    <h1>Welcome to the Online College Portal 2.0</h1>
+    <ul class="nav-links">
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Register</a></li>
+    </ul>
+</nav>
+</header>
 
-    <li>
-        <a href="responsiveWebApp/index.html"> Responsive Web App</a>
-    </li>
-    <li>
-        <a href="day1_July31/day1.html">Monday, July31, Review HTML</a>
-    </li>
-    <li>
-        <a href="day2_Aug1/day2.html">Tuesday, Aug 1, Review CSS</a>
-    </li>
-    <li>
-        <a href="day3_Aug3/day3.html">Thursday Aug 3, Intermediate CSS</a>
-    </li>
-    <li>
-        <a href="day4_Aug5/day4.html">Saturday, Aug 5, Javascript HTML</a>
-    </li>
-    <li>
-        <a href="day5_Aug7_DOM/day5.html">Monday, Aug 7, DOM JS review</a>
-    </li>
-    <li>
-        <a href="day6/index.js"> Tuesday, Aug 8, ReactJS</a>
-    </li>
-    <li>
-        <a href="responsiveWebApp/index.html"> Responsive Web App</a>
-    </li>
+
+<div style="text-align:center;margin-top:50px;">
+    <img src="BaruchCollege.jpg" alt="Schools.com" width="1000" height="400">
+<main>
+    <section id="courses">
+        <h2>Available Courses</h2>
+        <div class="search-container">
+            <input type="text" id="searchInput" onkeyup="searchCourses()" placeholder="Search for courses...">
+        </div>
+        <div class="courseList">
+            <ul id="loginLink">
+                <li><a href="login.html">CIS 2300</a></li>
+                <li><a href="login.html">CIS 3400</a></li>
+                <li><a href="login.html">CIS 4400</a></li>
+                <li><a href="login.html">CIS 5800</a></li>
+                <li><a href="login.html">ANT 1001</a></li>
+                <li><a href="login.html">ANT 4400</a></li>
+                <li><a href="login.html">ECON 2000</a></li>
+                <li><a href="login.html">SOC 3300</a></li>
+                <li><a href="login.html">... Log in for more courses</a></li>
+                <!-- Add more courses here -->
+            </ul>
+        </div>
+        
+    <script>
+    // Function to handle hyperlink click event
+    function handleLoginLinkClick(event) {
+        // Prevent the default action of the hyperlink (i.e., navigating to another page)
+        event.preventDefault();
     
+        // Display a message
+        alert("Please log in to register.");
+    
+        // Here, you can perform further actions if needed
+    }
+    
+    // Get the login link element
+    var loginLink = document.getElementById("loginLink");
+    
+    // Add click event listener to the login link
+    loginLink.addEventListener("click", handleLoginLinkClick);
+    </script>
+    </section>
 
-</ul>
+    <section id="announcements">
+        <h2>Announcements</h2>
+        <p>No announcements at the moment.</p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Online Course Portal</p>
+</footer>
+
 </body>
 </html>

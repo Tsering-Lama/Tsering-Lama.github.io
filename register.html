@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register</title>
+<link rel="stylesheet" href="logAndReg.css">
+</head>
+<body>
+
+<header>
+    <h1>Register for Online Course Portal</h1>
+    <div class="logo">
+        <a href="index.html"><img src="baruch_college_logo.png" style="width: 240px; height: 90px; alt="Baruch College Logo"></a>
+    </div>
+</header>
+
+<form action="register.php" method="POST">
+
+    <label for="Full name">Full Name:</label><br>
+    <input type="text" id="fullName" name="fullName" required><br>
+
+    <label for="Email Address">Email Address:</label><br>
+    <input type="text" id="email" name="emailaddress" required><br>
+
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username" required><br>
+
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" required><br>
+
+    <label for="role">Role:</label><br>
+    <select id="role" name="role" required>
+        <option value="student">Student</option>
+        <option value="faculty">Faculty</option>
+    </select><br>
+
+    <input type="submit" value="Register">
+</form>
+<br><br><br><br><br>
+
+<footer>
+    <p>&copy; 2024 Online Course Portal</p>
+</footer>
+
+</body>
+</html>

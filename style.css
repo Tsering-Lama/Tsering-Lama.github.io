@@ -1,0 +1,162 @@
+/*body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+header {
+  background-color: #2a73cc;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #dcdcdc;
+}
+
+main {
+  text-align: center;
+  padding: 20px;
+}
+
+main h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+main ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+main ul li {
+  margin-bottom: 10px;
+}
+
+main ul li a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main ul li a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #2a73cc;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+*/
+
+/*second css draft*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+  }
+  
+  header {
+    background-color: #2a73cc;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+  .logo img {
+    height: 60px;
+    width: auto;
+    margin-left: 10px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    margin: 50px;
+    margin-top: 0px;
+    padding: 0;
+    float: right; 
+  }
+  
+  .nav-links li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .nav-links li:last-child {
+    margin-right: 0;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .header-content {
+    margin-top: 20px;
+  }
+  
+  main {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  main h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  main ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  main ul li {
+    margin-bottom: 10px;
+  }
+  
+  main ul li a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  main ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  footer {
+    background-color: #2a73cc;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
