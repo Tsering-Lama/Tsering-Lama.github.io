@@ -25,15 +25,16 @@
 </header>
 
 
-<div style="text-align:center;margin-top:50px;">
-    <img src="BaruchCollege.jpg" alt="Schools.com" width="1000" height="400">
+<div style="text-align:center;margin-top:0px;">
+    <img src="BaruchCollege.jpg" alt="Schools.com" width="450px" height="400px">
+</div>    
 <main>
     <section id="courses">
         <h2>Available Courses</h2>
         <div class="search-container">
             <input type="text" id="searchInput" onkeyup="searchCourses()" placeholder="Search for courses...">
         </div>
-        <div class="courseList">
+        <div id="courseList">
             <ul id="loginLink">
                 <li><a href="login.html">CIS 2300</a></li>
                 <li><a href="login.html">CIS 3400</a></li>
@@ -48,24 +49,24 @@
             </ul>
         </div>
         
-    <script>
-    // Function to handle hyperlink click event
-    function handleLoginLinkClick(event) {
-        // Prevent the default action of the hyperlink (i.e., navigating to another page)
-        event.preventDefault();
-    
-        // Display a message
-        alert("Please log in to register.");
-    
-        // Here, you can perform further actions if needed
-    }
-    
-    // Get the login link element
-    var loginLink = document.getElementById("loginLink");
-    
-    // Add click event listener to the login link
-    loginLink.addEventListener("click", handleLoginLinkClick);
-    </script>
+<script>
+// Function to handle hyperlink click event
+function handleLoginLinkClick(event) {
+    // Prevent the default action of the hyperlink (i.e., navigating to another page)
+    event.preventDefault();
+
+    // Display a message
+    alert("Please log in to register.");
+
+    // Here, you can perform further actions if needed
+}
+
+// Get the login link element
+var loginLink = document.getElementById("loginLink");
+
+// Add click event listener to the login link
+loginLink.addEventListener("click", handleLoginLinkClick);
+</script>
     </section>
 
     <section id="announcements">
