@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<body>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Online Course Portal</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script src="../courses.js"></script>
+<header>
+<nav>
+    <div class="logo">
+        <a href="index.html"><img src="images/baruch_college_logo.png" alt="Baruch College Logo"></a>
+    </div>
+
+    <div>
+        <h1>Online College Portal for Baruch 2.0</h1>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+              const urlParams = new URLSearchParams(window.location.search);
+              const welcomeMessage = urlParams.get('message');
+              if (welcomeMessage) {
+                document.getElementById('welcomeMessage').innerText = welcomeMessage;
+              }
+            });
+        </script>
+          
+          <h1 id="welcomeMessage"></h1>
+          <!-- Other content of the account page -->
+          
+    </div>
+
+    <ul class="nav-links">
+        <a href="index.html"><button type="submit">Logout</button></a>
+    </ul>
+</nav>
+</header>
+   
+<html>
+<main>
+    <section id="courses">
+        <h2>Featured Courses</h2>
+        <div class="search-container">
+            <input type="text" id="searchInput" onkeyup="searchCourses()" placeholder="Search for courses...">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </div>
+        
+        <div class="course-list">
+            <ul>
+                <li>
+                    <h3>CIS 2300: Introduction to Database Management Systems</h3>
+                    <p>Description: This course introduces the fundamental concepts and principles of database management systems.</p>
+                    <p>Method of Meeting: Online</p>
+                    <p>Meeting Days and Time: TBD</p>
+                      <!-- Announcements section -->
+                    <h4>Announcements</h4>
+                    <ul>
+                        No new announcements
+                    </ul>
+
+                    <!-- Course Documents section -->
+                    <h4>Course Documents</h4>
+                    <ul>
+                        <li><a href="syllabus.pdf" target="_blank">Syllabus</a></li> <br>
+                        <li><a href="assignments.html" target="_blank"> Module </a></li> <br>
+                        <li><a href="test.html" target="_blank">Tests</a></li>
+                        <!-- Add more documents with appropriate links -->
+                    </ul>
+                    <button onclick="navigateToEnroll()">Enroll</button>
+                </li>
+
+                <li>
+                    <h3>CIS 3400: Introduction to Software Engineering</h3>
+                    <p>Description: This course covers software engineering principles, methodologies, and practices.</p>
+                    <p>Method of Meeting: In Person</p>
+                    <p>Meeting Days and Time: Monday/Wednesday, 10:00 AM - 11:30 AM</p>
+                      <!-- Announcements section -->
+                      <h4>Announcements</h4>
+                      <ul>
+                          No new announcements
+                      </ul>
+  
+                      <!-- Course Documents section -->
+                      <h4>Course Documents</h4>
+                      <ul>
+                          <li><a href="syllabus.pdf" target="_blank">Syllabus</a></li> <br>
+                          <li><a href="assignments.html" target="_blank"> Module </a></li> <br>
+                          <li><a href="test.html" target="_blank">Tests</a></li>
+                          <!-- Add more documents with appropriate links -->
+                      </ul>
+                      <button onclick="navigateToEnroll()">Enroll</button>
+                </li>
+                <li>
+                    <h3>CIS 4400: Web Application Development</h3>
+                    <p>Description: This course focuses on developing dynamic web applications using modern web technologies.</p>
+                    <p>Method of Meeting: Hybrid</p>
+                    <p>Meeting Days and Time: Tuesday/Thursday, 1:00 PM - 2:30 PM</p>
+                      <!-- Announcements section -->
+                      <h4>Announcements</h4>
+                      <ul>
+                          No new announcements
+                      </ul>
+  
+                      <!-- Course Documents section -->
+                      <h4>Course Documents</h4>
+                      <ul>
+                          <li><a href="syllabus.pdf" target="_blank">Syllabus</a></li> <br>
+                          <li><a href="assignments.html" target="_blank"> Module </a></li> <br>
+                          <li><a href="test.html" target="_blank">Tests</a></li>
+
+                          <!-- Add more documents with appropriate links -->
+                      </ul>
+                    <button onclick="enroll('CIS 4400')">Enroll</button>
+                </li>
+                <li>
+                    <h3>CIS 5800: Advanced Topics in Information Systems</h3>
+                    <p>Description: This course explores advanced topics in information systems and technology.</p>
+                    <p>Method of Meeting: Online</p>
+                    <p>Meeting Days and Time: TBD</p>
+                      <!-- Announcements section -->
+                      <h4>Announcements</h4>
+                      <ul>
+                          No new announcements
+                      </ul>
+  
+                      <!-- Course Documents section -->
+                      <h4>Course Documents</h4>
+                      <ul>
+                          <li><a href="syllabus.pdf" target="_blank">Syllabus</a></li> <br>
+                          <li><a href="assignments.html" target="_blank"> Module </a></li> <br>
+                          <li><a href="test.html" target="_blank">Tests</a></li>
+                          <!-- Add more documents with appropriate links -->
+                      </ul>
+                      <button onclick="navigateToEnroll()">Enroll</button>
+
+                </li>
+                <li>
+                    <h3>ANT 1001: Introduction to Anthropology</h3>
+                    <p>Description: This course provides an introduction to the study of human cultures and societies.</p>
+                    <p>Method of Meeting: In Person</p>
+                    <p>Meeting Days and Time: Tuesday/Thursday, 9:00 AM - 10:30 AM</p>
+                      <!-- Announcements section -->
+                      <h4>Announcements</h4>
+                      <ul>
+                          No new announcements
+                      </ul>
+  
+                      <!-- Course Documents section -->
+                      <h4>Course Documents</h4>
+                      <ul>
+                          <li><a href="syllabus.pdf" target="_blank">Syllabus</a></li> <br>
+                          <li><a href="assignments.html" target="_blank"> Module </a></li> <br>
+                          <li><a href="test.html" target="_blank">Tests</a></li>
+                          <!-- Add more documents with appropriate links -->
+                      </ul>
+                      <button onclick="navigateToEnroll()">Enroll</button>
+                    </li>
+                <li>
+                    <h3>ANT 4400: Anthropology of Globalization</h3>
+                    <p>Description: This course examines the impact of globalization on cultures and societies around the world.</p>
+                    <p>Method of Meeting: Hybrid</p>
+                    <p>Meeting Days and Time: Monday/Wednesday, 3:00 PM - 4:30 PM</p>
+                      <!-- Announcements section -->
+                      <h4>Announcements</h4>
+                      <ul>
+                          No new announcements
+                      </ul>
+  
+                      <!-- Course Documents section -->
+                      <h4>Course Documents</h4>
+                      <ul>
+                          <li><a href="syllabus.pdf" target="_blank">Syllabus</a></li> <br>
+                          <li><a href="assignments.html" target="_blank"> Module </a></li> <br>
+                          <li><a href="test.html" target="_blank">Tests</a></li>
+                          <!-- Add more documents with appropriate links -->
+                      </ul>
+                      <button onclick="navigateToEnroll()">Enroll</button>
+                    </li>
+                <li>
+                    <a href="#"> Click for more courses</a>
+            </ul>
+
+            <script>
+                function navigateToEnroll() {
+                    // Scroll to section 2
+                    document.getElementById('section2').scrollIntoView();
+                }
+            </script>
+            <!DOCTYPE html>
+
+</head>
+<body>
+    </html>
+ <div style="text-align:center;margin-top:50px;">
+
+<header>
+    <h1 id="section2">Select Classes for Fall 2024 </h1>
+</header>
+
+
+    <div>
+        <label for="filter">Filter Classes:</label>
+        <select id="filter" onchange="filterClasses()">
+            <option value="all">All</option>
+            <option value="science">CIS Classes</option>
+            <option value="math">OPM Classes</option>
+            <option value="humanities">COM Classes</option>
+        </select>
+    </div>
+    <div id="class-list">
+        <!-- Classes will be added here by JavaScript -->
+    </div>
+
+    <script>
+        const classes = [
+            { name: 'OPM 3000 Monday/Friday on-line 10:40 - 12pm by Professor A', category: 'math' },
+            { name: 'OPM 3000 Friday on-line 10:40 - 12pm by Professor S', category: 'math' },
+            { name: 'CIS 5800 Tuseday in person 6-9pm by Professor Z', category: 'science' },
+            { name: 'COM 4900 Sunday on-line 12 - 2pm by Professor Q', category: 'humanities' },
+            { name: 'COM 4900 Saturday on-line 12 - 2pm by Professor X', category: 'humanities' },
+            { name: 'CIS 5800 Tuseday/Thursday in person 6-9pm', category: 'science' }
+
+        ];
+
+        function filterClasses() {
+            const category = document.getElementById('filter').value;
+            const filteredClasses = category === 'all' ? classes : classes.filter(c => c.category === category);
+            nondisplayClasses(filteredClasses);
+        }
+
+        function nondisplayClasses(classes) {
+            const list = document.getElementById('class-list');
+            list.innerHTML = ''; 
+            classes.forEach(c => {
+                const btn = document.createElement('button');
+                btn.textContent = Sign up for ${c.name};
+                btn.onclick = () => signUpForClass(c.name);
+                list.appendChild(btn);
+            });
+        }
+
+        function signUpForClass(className) {
+            localStorage.setItem('signedUpClass', className);
+            alert(Signed up for ${className});
+        }
+
+        // Initial display
+        filterClasses();
+    </script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Input your Seclection </title>
+    <!-- Include the SheetJS library from CDN for Excel operations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <style>
+        input, button {
+            margin: 10px;
+            padding: 8px;
+        }
+        .report-container {
+            margin-top: 20px;
+            border: 1px solid #ddd;
+            padding: 15px;
+        }
+    </style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Report and Export to Excel</title>
+    <!-- Include the SheetJS library from CDN for Excel operations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <style>
+        input, button {
+            margin: 10px;
+            padding: 8px;
+        }
+        .report-container {
+            margin-top: 20px;
+            border: 1px solid #ddd;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Class Selections </h1>
+    
+    <input type="text" id="name" placeholder="Enter Name">
+    <input type="text" id="ID" placeholder="Enter ID">
+    <input type="text" id="Class" placeholder="Enter Class">
+    <button onclick="generateReport()">Preview Classes</button>
+    
+    <div class="report-container" id="report">
+        <h2>Report</h2>
+        <p id="reportName">Name: </p>
+        <p id="reportID">ID: </p>
+        <p id="reportClass">Class: </p>
+    </div>
+
+    <button onclick="exportToExcel()">Send copy to admin</button>
+
+    <script>
+        function generateReport() {
+            // Get values from inputs
+            var name = document.getElementById('name').value;
+            var ID = document.getElementById('ID').value;
+            var Class = document.getElementById('Class').value;
+
+            // Generate report in the div#report
+            document.getElementById('reportName').textContent = 'Name: ' + name;
+            document.getElementById('reportID').textContent = 'ID: ' + ID;
+            document.getElementById('reportClass').textContent = 'Class: ' + Class;
+        }
+
+        function exportToExcel() {
+            // Get the report data again
+            var name = document.getElementById('name').value;
+            var ID = document.getElementById('ID').value;
+            var Class = document.getElementById('Class').value;
+
+            // Create a workbook and worksheet
+            var wb = XLSX.utils.book_new();
+            var ws = XLSX.utils.aoa_to_sheet([
+                ['Report for ' + new Date().toLocaleDateString()], // Title
+                [], // Blank row
+                ['Name', 'ID', 'Class'], // Headers
+                [name, ID, Class] // Data
+            ]);
+
+            // Append worksheet to workbook
+            XLSX.utils.book_append_sheet(wb, ws, "Report");
+
+            // Generate Excel file and trigger download
+            XLSX.writeFile(wb, "Report_" + new Date().toISOString() + ".xlsx");
+        }
+    </script>
+        </div>
+    </section>
+            
+
+<footer>
+    <p>&copy; 2024 Online Course Portal</p>
+    <section>
+        <div style="text-align:center;margin-top:0px;">
+            <img src="images/BaruchCollege.jpg" alt="Schools.com" width="180px" height="130px">
+        </div>
+    </section>
+</footer>
+<script>
+    function searchCourses() {
+    // Get the input value and convert it to uppercase for case-insensitive comparison
+    var input = document.getElementById('searchInput').value.toUpperCase();
+    // Get all course titles
+    var courseTitles = document.querySelectorAll('.course-list li h3');
+
+    // Loop through each course title
+    courseTitles.forEach(function(title) {
+        // Get the text content of the course title
+        var titleText = title.textContent || title.innerText;
+        // Get the parent <li> element of the course title
+        var courseItem = title.parentElement; // No need to go further up
+
+        // If the course title contains the search input, display the course
+        if (titleText.toUpperCase().indexOf(input) > -1) {
+            courseItem.style.display = "";
+        } else {
+            // If not, hide the course
+            courseItem.style.display = "none";
+        }
+    });
+}
+</script>
+
+
+</body>
+</html>

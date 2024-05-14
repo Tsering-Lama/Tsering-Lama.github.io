@@ -1,20 +1,25 @@
-
 function searchCourses() {
-    // Declare variables
-    var input, filter, ul, li, a, i, txtValue;
-    input = document.getElementById('searchInput');
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("courseList");
-    li = ul.getElementsByTagName('li');
+    // Get the input value and convert it to uppercase for case-insensitive comparison
+    var input = document.getElementById('searchInput').value.toUpperCase();
+    // Get all course titles
+    var courseTitles = document.querySelectorAll('.course-list li h3');
 
-    // Loop through all list items, and hide those who don't match the search query
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        txtValue = a.textContent || a.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
+    // Loop through each course title
+    courseTitles.forEach(function(title) {
+        // Get the text content of the course title
+        var titleText = title.textContent || title.innerText;
+        // Get the parent <li> element of the course title
+        var courseItem = title.parentElement.parentElement; // Adjusted parent selector
+
+        // If the course title contains the search input, display the course
+        if (titleText.toUpperCase().indexOf(input) > -1) {
+            courseItem.style.display = "";
         } else {
-            li[i].style.display = "none";
+            // If not, hide the course
+            courseItem.style.display = "none";
         }
-    }
+    });
 }
+
+
+

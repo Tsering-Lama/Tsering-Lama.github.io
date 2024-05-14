@@ -11,17 +11,17 @@
 <header>
     <h1>Register for Online Course Portal</h1>
     <div class="logo">
-        <a href="index.html"><img src="baruch_college_logo.png" style="width: 240px; height: 90px; alt="Baruch College Logo"></a>
+        <a href="index.html"><img src="images/baruch_college_logo.png" style="width: 240px; height: 90px;" alt="Baruch College Logo"></a>
     </div>
 </header>
 
-<form action="register.php" method="POST">
+<form action="/sign_up" method ="POST" id="registrationForm">
 
-    <label for="Full name">Full Name:</label><br>
+    <label for="fullName">Full Name:</label><br>
     <input type="text" id="fullName" name="fullName" required><br>
 
-    <label for="Email Address">Email Address:</label><br>
-    <input type="text" id="email" name="emailaddress" required><br>
+    <label for="email">Email Address:</label><br>
+    <input type="text" id="email" name="email" required><br>
 
     <label for="username">Username:</label><br>
     <input type="text" id="username" name="username" required><br>
@@ -36,12 +36,12 @@
     </select><br>
 
     <input type="submit" value="Register">
-</form>
-<br><br><br><br><br>
+    <a href="login.html" style:"text-align:center;">Go to Log in</a>
 
-<footer>
-    <p>&copy; 2024 Online Course Portal</p>
-</footer>
+</form>
+
+<!-- Script to handle form submission -->ss
+
 
 </body>
 </html>
